@@ -1,5 +1,3 @@
-require 'pry'
-
 def roll_call_dwarves(names)
   names.each.with_index(1)  do |name, index|
     puts "#{index}. #{name}"
@@ -20,7 +18,7 @@ end
 
 def find_the_cheese(types)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  types.find do |word|
-    cheese_types.include?(word)
+  types.find do |type|
+    cheese_types.include?(type)
   end
 end
